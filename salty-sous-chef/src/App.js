@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import DropDown from './DropDown.js';
 import ButtonAction from './Button.js';
