@@ -6,7 +6,7 @@ import Select from '@mui/material/Select';
 export default function DropDown() {
     return (
             <div className='DropDown'>
-                <Select>
+                <Select defaultValue={'AUSD'}>
                     <MenuItem value ={'AUSD'}>AUSD</MenuItem>
                     <MenuItem value ={'GBP'}>GBP</MenuItem>
                     <MenuItem value ={'JPY'}>JPY</MenuItem>
