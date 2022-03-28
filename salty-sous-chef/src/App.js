@@ -13,11 +13,11 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const BASE_URL = "http://data.fixer.io/api/latest"
+  const BASE_URL = "http://data.fixer.io/api/latest?access_key=ae664278ce69935cc5d30cf63284a78c"
 
   useEffect(() => {
-    fetch(BASE_URL
-      ? access_key = ae664278ce69935cc5d30cf63284a78c)
+    fetch(BASE_URL)
+      // ? access_key = ae664278ce69935cc5d30cf63284a78c)
       // base = USD,
       // symbols = AUD,USD,GBP,JPY)
     .then((response) => {
