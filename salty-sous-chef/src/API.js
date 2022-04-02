@@ -1,10 +1,10 @@
 
 
-const BASE_URL = "http://data.fixer.io/api/latest"
+const BASE_URL = "http://data.fixer.io/api/latest?access_key=ae664278ce69935cc5d30cf63284a78c&symbols=AUD,USD,GBP,JPY"
 
-    ?access_key = "ae664278ce69935cc5d30cf63284a78c"
+    ?access_key=ae664278ce69935cc5d30cf63284a78c
     &base = USD
-    &symbols = AUD,USD,GBP,JPY
+    &symbols=AUD,USD,GBP,JPY
 
     useEffect(() => {
         fetch(BASE_URL)
@@ -14,7 +14,7 @@ const BASE_URL = "http://data.fixer.io/api/latest"
                     'This is an HTTP error: The status is ${response.status}'
                 );
             }
-            return response.json();
+            return console.log(response.json());
         })
         .then((actualData) => console.log(actualData))
         .catch((err) => {
