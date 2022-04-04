@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { Provider } from 'react-redux';
-import { store } from './TESTStore';
+import { makeStore } from './TESTStore';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={makeStore}>
     <App />
     </Provider>
   </React.StrictMode>
