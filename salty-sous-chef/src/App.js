@@ -4,7 +4,7 @@ import DropDown from './DropDown.js';
 import ButtonAction from './Button.js';
 import ConversionOutput from './ConversionOutput.js';
 import Stack from '@mui/material/Stack';
-import { useGetRatesByCountryQuery } from './services.js/API';
+import { useGetRatesByCountryQuery } from './API';
 
 function App() {
 
