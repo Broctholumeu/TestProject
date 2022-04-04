@@ -12,8 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      {/* <ConversionOutput /> */}
-      <h3>{rates.json()}</h3>
+      <ConversionOutput />
+      console.log(useGetRatesByCountryQuery);
       <Stack direction="row" spacing={2}>
         <DropDown /> 
         <ButtonAction />
