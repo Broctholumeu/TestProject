@@ -10,7 +10,7 @@ ReactDOM.render(
   
   <React.StrictMode>
     <Provider store={makeStore}>
-    <App />
+      <App />
     </Provider>
   </React.StrictMode>
   ,
