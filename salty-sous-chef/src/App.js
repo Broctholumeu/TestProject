@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <ConversionOutput />
-      <RatesList />
+      {/* <RatesList /> */}
       <Stack direction="row" spacing={2}>
         <DropDown /> 
         <ButtonAction />
