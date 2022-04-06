@@ -1,18 +1,16 @@
 import React from 'react';
 import './App.css';
 import Button from '@mui/material/Button';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 export default function ButtonAction() {
     const dispatch = useDispatch();
-    const updateRate = (e) => dispatch({
-        type: 'Rates'
-    });
+    const updateRate = useSelector((state) => state.rates);
 
     return(
         <div className='ButtonAction'>
-            <Button variant='contained' onClick={updateRate}>Convert</Button>
+            <Button variant='contained' onClick={() => dispatch(updateRate())}>Convert</Button>
         </div>
     );
 }

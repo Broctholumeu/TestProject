@@ -7,7 +7,7 @@ import { useGetRatesByCountryQuery } from './API';
 
 
 export default function ConversionOutput() {
-    const { data, error, isLoading } = useGetRatesByCountryQuery(`AUD`)
+    const { data, error, isLoading } = useGetRatesByCountryQuery(``);
 
     return(
         <div className='ConversionOutput'>
