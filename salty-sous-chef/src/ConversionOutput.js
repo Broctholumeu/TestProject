@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { useGetRatesByCountryQuery } from './API';
+import { conversionRateApi, useGetRatesByCountryQuery } from './API';
 // import List from '@mui/material/List';
 // import ListItem from '@mui/material/ListItem';
 // import ListItemText from '@mui/material/ListItemText'
@@ -23,7 +23,7 @@ export default function ConversionOutput() {
         <>Loading...</>
       ) : data ? (
         <>
-          <h3>{data.rates}</h3>
+         <h3>IT'S LOADED</h3> 
         </>
       ) : null}
         </div>

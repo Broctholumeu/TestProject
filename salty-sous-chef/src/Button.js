@@ -10,7 +10,7 @@ export default function ButtonAction() {
 
     return(
         <div className='ButtonAction'>
-            <Button variant='contained' onClick={() => dispatch(updateRate())}>Convert</Button>
+            <Button variant='contained' onClick={() => dispatch(updateRate('AUD'))}>Convert</Button>
         </div>
     );
 }
