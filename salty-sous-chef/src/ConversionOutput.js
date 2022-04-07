@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { conversionRateApi, useGetRatesByCountryQuery } from './API';
+import { conversionRateApi, useGetRatesByCountryQuery } from './redux/API';
 // import List from '@mui/material/List';
 // import ListItem from '@mui/material/ListItem';
 // import ListItemText from '@mui/material/ListItemText'
