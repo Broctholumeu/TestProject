@@ -1,22 +1,19 @@
 import React from 'react';
 import './App.css';
-import { conversionRateApi, useGetRatesByCountryQuery } from './redux/API';
-// import List from '@mui/material/List';
-// import ListItem from '@mui/material/ListItem';
-// import ListItemText from '@mui/material/ListItemText'
+import { useGetRatesByCountryQuery } from './redux/API';
+import { connect } from 'react-redux';
 
+const mapStateToProps = (state) => {
+  return {
+    currency: state.currency,
+  }
+}
 
-export default function ConversionOutput() {
+const ConversionOutput = ({ currency }) => {
     const { data, error, isLoading } = useGetRatesByCountryQuery(``);
 
     return(
         <div className='ConversionOutput'>
-        {/* <List>
-            <ListItem>
-                <ListItemText primary="Current Conversion Rate" />
-            </ListItem>
-        </List> */}
-
         {error ? (
         <>Oh no, there was an error</>
       ) : isLoading ? (
@@ -29,3 +26,5 @@ export default function ConversionOutput() {
         </div>
     );
 }
+
+export default connect(mapStateToProps)(ConversionOutput);
