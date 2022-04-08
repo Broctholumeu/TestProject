@@ -1,7 +1,6 @@
 import * as actionTypes from './types';
 
 const initialState = {
-    currency: [],
     currentCountry: 'AUD',
 }
 
