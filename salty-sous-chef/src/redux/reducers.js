@@ -1,13 +1,18 @@
-import setCurrency from './actions.js';
+import * as actionTypes from './types';
 
 const initialState = {
-    currency: 'AUD',
+    currency: [],
+    currentCountry: 'AUD',
 }
 
 //similar to an event listener
 function currencyReducer(state = initialState, action) {
     switch (action.type) {
-        case setCurrency:
+        case actionTypes.FETCH_RATE:
+            return {...state, currency: action.payload};
+        case actionTypes.SET_COUNTRY:
+            return {...state, currency: action.payload};
+        case actionTypes.LOAD_ALL_RATES:
             return {...state, currency: action.payload};
         default:
             return state;
